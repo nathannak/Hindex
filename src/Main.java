@@ -11,6 +11,9 @@ public class Main {
 
         for(int c : citations) {
             if(c >= n) {
+                // if number of citations is bigger than last element (n)
+                // aggregate all in last index since going further is meaningless
+                // because we need to compare number of citations to index
                 buckets[n]++;
             } else {
                 buckets[c]++;
